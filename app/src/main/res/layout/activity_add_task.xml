@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical"
+    tools:context=".AddTaskActivity">
+
+    <TimePicker
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@color/cardview_dark_background"></TimePicker>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#FF0009"
+            android:textSize="35dp"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="OK"
+            android:background="#0000FF"
+            android:textColor="#FFFF"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:textSize="35dp"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>
