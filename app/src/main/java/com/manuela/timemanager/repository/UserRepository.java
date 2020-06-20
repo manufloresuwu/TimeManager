@@ -1,13 +1,15 @@
+/*
 package com.manuela.timemanager.repository;
 
-import com.manuela.timemanager.model.User;
+//import com.manuela.timemanager.model.User;
 
 import java.util.ArrayList;
-import java.util.List;
+//import java.util.List;
+
 
 public class UserRepository {
     private static UserRepository instance;
-    private List<User> users = new ArrayList<>();
+    //private List<User> users = new ArrayList<>();
 
     public static UserRepository getInstance() {
         if (instance == null) {
@@ -40,3 +42,9 @@ public class UserRepository {
                 "Bolivia"));
     }
 }
+
+
+
+
+
+*/

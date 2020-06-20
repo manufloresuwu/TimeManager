@@ -7,21 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.manuela.timemanager.R;
-
-public class MainActivity extends AppCompatActivity {
+public class CalendarActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_calendar);
 
-        Button start = (Button) findViewById(R.id.button);
+        Button plus =  (Button) findViewById(R.id.plus);
 
-        start.setOnClickListener(new View.OnClickListener(){
+        plus.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent= new Intent (MainActivity.this, CalendarActivity.class);
+                Intent intent= new Intent (CalendarActivity.this, AddTaskActivity.class);
                 startActivity(intent);
             }
         });
