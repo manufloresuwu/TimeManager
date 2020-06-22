@@ -40,9 +40,10 @@ public class CustomArrayAdapter extends ArrayAdapter<Row>
         final Row row = getItem(position);
         holder.getTextViewTitle().setText(row.getTitle());
         holder.getTextViewSubtitle().setText(row.getSubtitle());
-        holder.getCheckBox().setTag(position);
-        holder.getCheckBox().setChecked(row.isChecked());
-        holder.getCheckBox().setOnClickListener(this);
+        //TODO NullP
+        //holder.getCheckBox().setTag(position);
+        //holder.getCheckBox().setChecked(row.isChecked());
+        //holder.getCheckBox().setOnClickListener(this);
         return convertView;
     }
     @Override
