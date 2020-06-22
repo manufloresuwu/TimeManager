@@ -14,31 +14,31 @@
         android:theme="?attr/actionBarTheme" />
 
     <Button
+        android:id="@+id/general"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
-        android:onClick="goToMyPokemons"
-        android:text="general" />
+        android:text="@string/general" />
 
     <Button
+        android:id="@+id/information"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
-        android:onClick="goToMyFavoritePokemons"
-        android:text="informacion" />
+        android:text="@string/information" />
 
     <Button
+        android:id="@+id/contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
-        android:onClick="goToMyPokemons"
-        android:text="contacto" />
+        android:text="@string/contact" />
 
     <Button
+        android:id="@+id/new_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
-        android:onClick="goToMyFavoritePokemons"
-        android:text="nuevo usuario" />
+        android:text="@string/new_user" />
 
 </LinearLayout>
