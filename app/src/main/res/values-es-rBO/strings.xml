@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Time Manager +</string>
+    <string name="start_button">COMENZAR</string>
+    <string name="login_title">Entrar</string>
+    <string name="email">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="button_login">Entrar</string>
+    <string name="button_register">Registrarse</string>
+    <string name="register_title">Registrarse</string>
+    <string name="register_email">Ingresar correo</string>
+    <string name="register_password">Ingresar contraseña</string>
+    <string name="register_password_repeat">Repetir contraseña</string>
+    <string name="register_name">Ingresar nombre</string>
+    <string name="register_nickname">Ingresar apodo</string>
+    <string name="register_age">Ingresar edad</string>
+    <string name="register_gender">Seleccionar género</string>
+    <string name="error_login">Correo o contraseña incorrecta</string>
+    <string name="error_password">Revise la contraseña por favor</string>
+    <string name="error_email">Ingrese un correo válido</string>
+    <string name="error_fields">Por favor ingrese todos los archivos</string>
+    <string name="button_create">Crear una cuenta</string>
+    <string name="profile_title">Perfil</string>
+    <string name="profile_email">Correo</string>
+    <string name="profile_password">Contraseña</string>
+    <string name="profile_name">Nombre</string>
+    <string name="profile_nickname">Apodo</string>
+    <string name="profile_age">Edad</string>
+    <string name="profile_gender">Género</string>
+    <string name="next">Siguiente</string>
+    <string name="previous">Anterior</string>
+    <string name="time">Tiempo</string>
+    <string name="general">general</string>
+    <string name="information">información</string>
+    <string name="contact">contacto</string>
+    <string name="new_user">nuevo usuario</string>
+</resources>
