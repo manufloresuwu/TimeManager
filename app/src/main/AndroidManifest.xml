@@ -23,6 +23,7 @@
             android:label="@string/register_title"></activity>
         <activity android:name=".AddTaskActivity"></activity>
         <activity android:name=".CalendarActivity" />
+        <activity android:name=".ThingsToDoActivity"></activity>
     </application>
 
 </manifest>
