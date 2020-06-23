@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notificaciones"
+    android:orientation="vertical">
+
+
+    <Switch
+        android:id="@+id/activarN"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="  Recibir Notificaciones" />
+
+    <Button
+        android:id="@+id/btNoti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notificaciones Prueba" />
+</LinearLayout>
