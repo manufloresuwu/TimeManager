@@ -92,6 +92,8 @@ public class RegisterActivity extends Activity {
             @Override
             public void onClick(View view) {
                 validateRegister();
+                Intent intent = new Intent(RegisterActivity.this, CalendarActivity.class);
+                startActivity(intent);
             }
         });
 
