@@ -24,6 +24,11 @@
     <string name="register_age">Enter age</string>
     <string name="register_gender">Select gender</string>
 
+    <!-- Register Gender -->
+    <string name="register_gender_female">Female</string>
+    <string name="register_gender_male">Male</string>
+    <string name="register_gender_nonbinary">Non Binary</string>
+
     <!-- Errors -->
     <string name="error_login">Email or password incorrect</string>
     <string name="error_password">Review the password please</string>
