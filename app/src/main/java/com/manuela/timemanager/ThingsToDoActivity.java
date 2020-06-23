@@ -13,8 +13,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ThingsToDoActivity extends AppCompatActivity {
     List<Row> rows;
-
+    int tareas = 1;
     private ListView listView;
+    private AddTaskActivity addT;
+    public ThingsToDoActivity(){
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +27,13 @@ public class ThingsToDoActivity extends AppCompatActivity {
 
         rows = new ArrayList<Row>(10);
         Row row = null;
-        for (int i = 1; i < 11; i++) {
+        for (int i = 1; i < tareas; i++) {
             row = new Row();
-            row.setTitle("Title " + i);
-            row.setSubtitle("Subtitle " + i);
+            row.setTitle("Title: " + addT.getTexto());
+            row.setSubtitle("At: " + addT.getHora() + ":" + addT.getMinutos());
             rows.add(row);
         }
-        rows.get(3).setChecked(true);
-        rows.get(6).setChecked(true);
-        rows.get(9).setChecked(true);
+//        rows.get(3).setChecked(true);
 
         listView.setAdapter(new CustomArrayAdapter(this, rows));
 
@@ -44,5 +45,8 @@ public class ThingsToDoActivity extends AppCompatActivity {
                         rows.get(position).getTitle(), Toast.LENGTH_SHORT).show();
             }
         });
+    }
+    public void setTareas(int tr){
+        tareas = tr;
     }
 }
