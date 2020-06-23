@@ -1,5 +1,8 @@
 package com.manuela.timemanager;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+
 import java.util.ArrayList;
 import java.util.List;
 import com.manuela.timemanager.User;
@@ -17,5 +20,6 @@ public class UserRepository {
 
     public void register(User user) {
         users.add(user);
+
     }
 }

@@ -5,10 +5,10 @@ public class User {
     private String name;
     private String email;
     private String password;
-    private int age;
+    private String age;
     private String gender;
 
-    public User(String nickname, String name, String email, String password, int age, String gender) {
+    public User(String nickname, String name, String email, String password, String age, String gender) {
         this.nickname = nickname;
         this.name = name;
         this.email = email;
@@ -45,11 +45,11 @@ public class User {
         this.password = password;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 

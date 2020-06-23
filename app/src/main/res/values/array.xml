@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="genders">
-        <item>Femenino</item>
-        <item>Masculino</item>
-        <item>No Binario</item>
+        <item>@string/register_gender_female</item>
+        <item>@string/register_gender_male</item>
+        <item>@string/register_gender_nonbinary</item>
+    </string-array>
+
+    <string-array name="ages">
+        <item>-14</item>
+        <item>14-18</item>
+        <item>+18</item>
     </string-array>
 </resources>
