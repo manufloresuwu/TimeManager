@@ -92,7 +92,19 @@ public class RegisterActivity extends Activity {
             @Override
             public void onClick(View view) {
                 validateRegister();
+                String f[]=new String[12];
+                int k[]=new int[12];
+                int l[]=new int[12];
+                for(int i=0;i<12;i++){
+                    f[i]="";
+                    k[i]=0;
+                    l[i]=0;
+                }
                 Intent intent = new Intent(RegisterActivity.this, CalendarActivity.class);
+                intent.putExtra("tex", f);
+                intent.putExtra("hora", k);
+                intent.putExtra("minutos",l);
+                intent.putExtra("tareas", 0);
                 startActivity(intent);
             }
         });

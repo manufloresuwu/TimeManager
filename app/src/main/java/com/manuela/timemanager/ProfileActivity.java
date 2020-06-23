@@ -21,8 +21,8 @@ import com.manuela.timemanager.UserRepository;
 import com.manuela.timemanager.User;
 
 public class ProfileActivity extends AppCompatActivity {
-    private Context context;
-    SharedPreferences sharedPref = context.getSharedPreferences(
-            "usuario", Context.MODE_PRIVATE);
-    private String user = sharedPref.getString("nombre", null);
+//    private Context context;
+ //   SharedPreferences sharedPref = context.getSharedPreferences(
+ //           "usuario", Context.MODE_PRIVATE);
+ //   private String user = sharedPref.getString("nombre", null);
 }

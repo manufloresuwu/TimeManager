@@ -54,7 +54,7 @@ public class AddTaskActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast toast2 = Toast.makeText(getApplicationContext(),
-                                "Añadido a la hora: "+hora+":"+minutos, Toast.LENGTH_SHORT);
+                        "Añadido a la hora: "+hora+":"+minutos, Toast.LENGTH_SHORT);
 
                 toast2.setGravity(Gravity.CENTER| Gravity.LEFT,0,0);
 
@@ -75,6 +75,13 @@ public class AddTaskActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AddTaskActivity.this, CalendarActivity.class);
+                textos[t]=txt.getText().toString();
+                horas[t]=hora;
+                minutes[t]=minutos;
+                intent.putExtra("tex", textos);
+                intent.putExtra("hora", horas);
+                intent.putExtra("minutos",minutes);
+                intent.putExtra("tareas", t);
                 startActivity(intent);
             }
         });
