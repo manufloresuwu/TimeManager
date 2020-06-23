@@ -28,10 +28,11 @@
             android:background="@color/cardview_light_background"
             android:dateTextAppearance="@style/TextAppearance.AppCompat.Medium"></CalendarView>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
         <ImageButton
@@ -53,4 +54,5 @@
             ></Button>
 
     </LinearLayout>
+
 </LinearLayout>
