@@ -18,7 +18,7 @@
     <string name="error_login">Correo o contraseña incorrecta</string>
     <string name="error_password">Revise la contraseña por favor</string>
     <string name="error_email">Ingrese un correo válido</string>
-    <string name="error_fields">Por favor ingrese todos los archivos</string>
+    <string name="error_fields">Por favor ingrese todos los espacios</string>
     <string name="button_create">Crear una cuenta</string>
     <string name="profile_title">Perfil</string>
     <string name="profile_email">Correo</string>

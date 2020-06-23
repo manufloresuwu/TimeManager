@@ -9,21 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Notificaciones"></activity>
+        <activity android:name=".EditarInformacion" />
+        <activity android:name=".General"
+            android:parentActivityName=".Configurations"/>
+        <activity android:name=".InformationUs" />
+            android:parentActivityName=".Configurations"/>
+        <activity android:name=".Configurations" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"
-            android:label="@string/login_title"></activity>
-        <activity android:name=".RegisterActivity"
-            android:label="@string/register_title"></activity>
-        <activity android:name=".AddTaskActivity"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/login_title" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/register_title"
+            android:parentActivityName=".General"/>
+        <activity android:name=".AddTaskActivity" />
         <activity android:name=".CalendarActivity" />
-        <activity android:name=".ThingsToDoActivity"></activity>
+        <activity android:name=".ThingsToDoActivity" />
     </application>
 
 </manifest>

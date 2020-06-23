@@ -5,40 +5,37 @@
     android:background="#FFFFFF"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
 
     <Button
         android:id="@+id/general"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
-        android:text="@string/general" />
+        android:text="@string/general"
+        android:onClick="general"/>
 
     <Button
-        android:id="@+id/information"
+        android:id="@+id/bti"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
-        android:text="@string/information" />
+        android:text="@string/information"
+        android:onClick="information"/>
 
     <Button
-        android:id="@+id/contact"
+        android:id="@+id/btc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
-        android:text="@string/contact" />
+        android:text="Perfil"
+        android:onClick="perfil"/>
 
     <Button
-        android:id="@+id/new_user"
+        android:id="@+id/btnew"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackground"
-        android:text="@string/new_user" />
+        android:text="@string/new_user"
+        android:onClick="usuario"/>
 
 </LinearLayout>
