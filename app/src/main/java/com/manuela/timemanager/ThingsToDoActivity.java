@@ -2,6 +2,7 @@ package com.manuela.timemanager;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
 
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +14,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ThingsToDoActivity extends AppCompatActivity {
     List<Row> rows;
-    int tareas = 1;
+    int max = 12;
+    int horas[]=new int[max];
+    int minutes[]=new int[max];
+    String textos[]=new String [max];
     private ListView listView;
     private AddTaskActivity addT;
     public ThingsToDoActivity(){
@@ -23,16 +27,18 @@ public class ThingsToDoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.todo_layout);
         listView = (ListView) findViewById(android.R.id.list);
-
         Bundle datos = this.getIntent().getExtras();
-        String txt = datos.getString("tex");
+        String txt[] = datos.getStringArray("tex");
+        int tasks = datos.getInt("tareas");
+        int hora[] = datos.getIntArray("hora");
+        int minutos[] = datos.getIntArray("minutos");
 
         rows = new ArrayList<Row>(10);
         Row row = null;
-        for (int i = 0; i < tareas; i++) {
+        for (int i = 0; i < tasks+1; i++) {
             row = new Row();
-            row.setTitle("Title: " + txt );
-            row.setSubtitle("at: " + "hora");//addT.getHora() + ":" + addT.getMinutos());
+            row.setTitle("Title: " + txt[i] );
+            row.setSubtitle("at: " + hora[i] + ":" + minutos[i]);
             rows.add(row);
         }
 //        rows.get(3).setChecked(true);
@@ -47,10 +53,6 @@ public class ThingsToDoActivity extends AppCompatActivity {
                         rows.get(position).getTitle(), Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-    public void setTareas(int tr){
-        tareas = tr;
     }
 
 }

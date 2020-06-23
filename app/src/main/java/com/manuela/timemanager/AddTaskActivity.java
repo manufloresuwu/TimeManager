@@ -19,7 +19,12 @@ public class AddTaskActivity extends AppCompatActivity {
 
     TimePicker timer;
     int hora, minutos, t = 0;
+    int max=12;
+    int horas[]=new int[max];
+    int minutes[]=new int[max];
+
     String texto = "";
+    String textos[]=new String[max];
     EditText txt;
     String aux;
     private ThingsToDoActivity todo;
@@ -35,7 +40,6 @@ public class AddTaskActivity extends AppCompatActivity {
         Button cancel = (Button) findViewById(R.id.cancel);
         txt=(EditText)findViewById(R.id.txt);
 
-        //texto = getIntent().getExtras().getString(txt.getText().toString());
 
         timer = (TimePicker) findViewById(R.id.timer);
         timer.setIs24HourView(true);
@@ -44,23 +48,26 @@ public class AddTaskActivity extends AppCompatActivity {
         hora = timer.getHour();
         minutos = timer.getMinute();
 
-        aux = txt.getText().toString();
+
 
         Bok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                t++;
-                //todo.setTareas(t);
-
                 Toast toast2 = Toast.makeText(getApplicationContext(),
-                                "hora: "+hora+":"+minutos, Toast.LENGTH_SHORT);
+                                "Añadido a la hora: "+hora+":"+minutos, Toast.LENGTH_SHORT);
 
                 toast2.setGravity(Gravity.CENTER| Gravity.LEFT,0,0);
 
                 toast2.show();
-
+                textos[t]=txt.getText().toString();
+                horas[t]=hora;
+                minutes[t]=minutos;
                 Intent intent = new Intent(AddTaskActivity.this, ThingsToDoActivity.class);
-                intent.putExtra("tex", aux);
+                intent.putExtra("tex", textos);
+                intent.putExtra("hora", horas);
+                intent.putExtra("minutos",minutes);
+                intent.putExtra("tareas", t);
+                t++;
                 startActivity(intent);
             }
         });
@@ -71,17 +78,6 @@ public class AddTaskActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-
-
-    public String getTexto(){
-        return texto;
-    }
-    public int getHora(){
-        return hora;
-    }
-    public int getMinutos(){
-        return minutos;
     }
 
 }
