@@ -18,7 +18,7 @@
     <string name="error_login">Correo o contraseña incorrecta</string>
     <string name="error_password">Revise la contraseña por favor</string>
     <string name="error_email">Ingrese un correo válido</string>
-    <string name="error_fields">Por favor ingrese todos los archivos</string>
+    <string name="error_fields">Por favor ingrese todos los espacios</string>
     <string name="button_create">Crear una cuenta</string>
     <string name="profile_title">Perfil</string>
     <string name="profile_email">Correo</string>
@@ -30,8 +30,24 @@
     <string name="next">Siguiente</string>
     <string name="previous">Anterior</string>
     <string name="time">Tiempo</string>
-    <string name="general">general</string>
-    <string name="information">información</string>
+    <string name="general">General</string>
+    <string name="information">Información</string>
     <string name="contact">contacto</string>
-    <string name="new_user">nuevo usuario</string>
+    <string name="new_user">Nuevo Usuario</string>
+    <string name="perfil">Perfil</string>
+    <string name="get_notifications">Recibir Notificaciones</string>
+    <string name="notifications_prueba">Notificaciones</string>
+    <string name="save">Guardar</string>
+    <string name="edit_information">Editar Información</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="svartalla_inf">Svartalla Soft es una empresa desarrolladora de software creada en 2020</string>
+    <string name="founders">Fundadores</string>
+    <string name="contact_us">Contáctanos</string>
+    <string name="support">Para soporte y servicio técnico comunicarse a</string>
+    <string name="date">Fecha</string>
+    <string name="ok">Okay</string>
+    <string name="cancel">Cancelar</string>
+    <string name="register_gender_female">Género Femenino</string>
+    <string name="register_gender_male">Género Masculino</string>
+    <string name="register_gender_nonbinary">Género Sin Definir</string>
 </resources>

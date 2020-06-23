@@ -24,11 +24,6 @@
     <string name="register_age">Enter age</string>
     <string name="register_gender">Select gender</string>
 
-    <!-- Register Gender -->
-    <string name="register_gender_female">Female</string>
-    <string name="register_gender_male">Male</string>
-    <string name="register_gender_nonbinary">Non Binary</string>
-
     <!-- Errors -->
     <string name="error_login">Email or password incorrect</string>
     <string name="error_password">Review the password please</string>
@@ -59,11 +54,44 @@
     <string name="time">Time</string>
 
 
-
     <!--Configuration-->
-    <string name="general">general</string>
-    <string name="information">information</string>
-    <string name="contact">contact</string>
-    <string name="new_user">new user</string>
+    <string name="general">General</string>
+    <string name="information">Information</string>
+    <string name="perfil">Profile</string>
+    <string name="new_user">New User</string>
+
+    <!-- Notification -->
+    <string name="get_notifications">Get Notifications</string>
+    <string name="notifications_prueba">Notifications</string>
+
+    <!-- Edit Information -->
+    <string name="save">Save</string>
+
+    <!-- General -->
+    <string name="edit_information">Edit Information</string>
+    <string name="notifications">Notifications</string>
+
+    <!-- Information Us -->
+    <string name="svartalla_soft" translatable="false">Svartalla Soft</string>
+    <string name="svartalla_inf">"Svartalla Soft is a software developer company created in 2020 "</string>
+    <string name="founders">Founders</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="support">For a technical support and service contact</string>
+    <string name="founder" translatable="false">Llubitza Linares</string>
+    <string name="founder2" translatable="false">Manuela Flores</string>
+    <string name="founder3" translatable="false">Jaime Cortez</string>
+    <string name="founder4" translatable="false">Ignacio Valencia</string>
+
+    <!-- Add Task -->
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="date">Date</string>
+    <string name="contact">Contact</string>
+
+    <!-- Array -->
+    <string name="register_gender_female">Gender Female</string>
+    <string name="register_gender_male">Gender Male</string>
+    <string name="register_gender_nonbinary">Gender Nonbinary</string>
+    <string name="action_settings" translatable="false">action settings</string>
 
 </resources>

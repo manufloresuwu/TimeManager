@@ -36,10 +36,12 @@ public class ThingsToDoActivity extends AppCompatActivity {
         rows = new ArrayList<Row>(10);
         Row row = null;
         for (int i = 0; i < tasks+1; i++) {
-            row = new Row();
-            row.setTitle("Title: " + txt[i] );
-            row.setSubtitle("at: " + hora[i] + ":" + minutos[i]);
-            rows.add(row);
+            if(txt!=null){
+                row = new Row();
+                row.setTitle("Title: " + txt[i] );
+                row.setSubtitle("at: " + hora[i] + ":" + minutos[i]);
+                rows.add(row);
+            }
         }
 //        rows.get(3).setChecked(true);
 
