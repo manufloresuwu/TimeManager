@@ -18,19 +18,21 @@ public class ThingsToDoActivity extends AppCompatActivity {
     private AddTaskActivity addT;
     public ThingsToDoActivity(){
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.todo_layout);
         listView = (ListView) findViewById(android.R.id.list);
 
+        Bundle datos = this.getIntent().getExtras();
+        String txt = datos.getString("tex");
+
         rows = new ArrayList<Row>(10);
         Row row = null;
-        for (int i = 1; i < tareas; i++) {
+        for (int i = 0; i < tareas; i++) {
             row = new Row();
-            row.setTitle("Title: " + addT.getTexto());
-            row.setSubtitle("At: " + addT.getHora() + ":" + addT.getMinutos());
+            row.setTitle("Title: " + txt );
+            row.setSubtitle("at: " + "hora");//addT.getHora() + ":" + addT.getMinutos());
             rows.add(row);
         }
 //        rows.get(3).setChecked(true);
@@ -46,7 +48,9 @@ public class ThingsToDoActivity extends AppCompatActivity {
             }
         });
     }
+
     public void setTareas(int tr){
         tareas = tr;
     }
+
 }
