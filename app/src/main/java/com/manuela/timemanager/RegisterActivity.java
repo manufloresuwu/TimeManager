@@ -87,7 +87,6 @@ public class RegisterActivity extends Activity {
             }
         });
 
-
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

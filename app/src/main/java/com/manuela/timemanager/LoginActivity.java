@@ -2,6 +2,7 @@ package com.manuela.timemanager;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
@@ -22,6 +23,14 @@ import com.manuela.timemanager.User;
 
 public class LoginActivity extends AppCompatActivity {
 
+    public static final String MyPREFERENCES = "MyPrefs" ;
+    public static final String correo = "correoKey";
+    public static final String pasword = "PaswordKey";
+
+
+
+    SharedPreferences sharedpreferences;
+
     private static final String LOG = LoginActivity.class.getSimpleName();
     private Context context;
 
@@ -41,7 +50,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         context = this;
         setContentView(render());
-
         addEvents();
     }
 
@@ -72,6 +80,17 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 validateLogin();
+
+                String n = emailEditText.getText().toString();
+                String p = passwordEditText.getText().toString();
+
+                SharedPreferences pref = getApplicationContext().getSharedPreferences("BuyyaPref", MODE_PRIVATE);
+                SharedPreferences.Editor editor = pref.edit();
+
+                editor.putString("correo", n);
+                editor.putString("pasword", p);
+                editor.commit();
+                Toast.makeText(LoginActivity.this,"Entraste correctamente uwu",Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -194,7 +213,21 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-        Intent mainActivityIntent = new Intent(context, MainActivity.class);
+        Intent mainActivityIntent = new Intent(context, CalendarActivity.class);
+
+        String f[]=new String[12];
+        int k[]=new int[12];
+        int l[]=new int[12];
+        for(int i=0;i<12;i++){
+            f[i]="";
+            k[i]=0;
+            l[i]=0;
+        }
+        mainActivityIntent.putExtra("tex", f);
+        mainActivityIntent.putExtra("hora", k);
+        mainActivityIntent.putExtra("minutos",l);
+        mainActivityIntent.putExtra("tareas", 0);
+
         startActivity(mainActivityIntent);
     }
 }
