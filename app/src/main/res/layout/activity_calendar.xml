@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:background="@color/cardview_dark_background"
-tools:context=".CalendarActivity">
-
-<ImageButton
-    android:layout_width="60dp"
-    android:layout_height="60dp"
-    android:layout_marginStart="350dp"
-    android:background="@drawable/ahok"
-    android:id="@+id/ahok">
-
-
-</ImageButton>
-
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/date"
-    android:textColor="#FFFF"
-    android:textSize="30dp"
-    android:layout_marginLeft="160dp">
-
-</TextView>
-<LinearLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="400dp">
-
-    <CalendarView
-        android:id="@+id/calendar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/cardview_light_background"
-        android:dateTextAppearance="@style/TextAppearance.AppCompat.Medium"></CalendarView>
-</LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="30dp"
-    android:orientation="horizontal">
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context=".CalendarActivity">
 
     <ImageButton
-        android:id="@+id/todo"
-        android:layout_width="160dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="30dp"
-        android:background="@drawable/agenda"></ImageButton>
+        android:id="@+id/ahok"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="350dp"
+        android:background="@drawable/ahok">
 
 
-    <Button
-        android:id="@+id/plus"
-        android:layout_width="wrap_content"
+    </ImageButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_light_background"
+            android:dateTextAppearance="@style/TextAppearance.AppCompat.Medium"></CalendarView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="+"
-        android:textSize="50dp"
-        android:layout_marginLeft="70dp"
-        ></Button>
+        android:orientation="horizontal">
 
-</LinearLayout>
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:text="+"
+            android:textSize="50dp"></Button>
+
+
+        <ImageButton
+            android:id="@+id/todo"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/agenda"></ImageButton>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:text="@string/date"
+        android:textColor="#FFFF"
+        android:textSize="30dp">
+
+    </TextView>
 </LinearLayout>

@@ -31,7 +31,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Svartalla"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/nicknameText"
@@ -47,7 +48,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Manuela Flores"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/nameText"
@@ -63,7 +65,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="svartala@gmail.com"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/emailText"
@@ -79,7 +82,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="***************"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/passwordText"
