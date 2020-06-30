@@ -89,34 +89,6 @@
                 android:ems="10"
                 android:inputType="textPassword" />
 
-            <TextView
-                android:id="@+id/ageTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/register_age"
-                android:textColor="@color/colorPrimary" />
-
-            <Spinner
-                android:id="@+id/ageSpinner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/ages" />
-
-            <TextView
-                android:id="@+id/genderTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/register_gender"
-                android:textColor="@color/colorPrimary" />
-
-            <Spinner
-                android:id="@+id/genderSpinner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/genders" />
-
 
             <Button
                 android:id="@+id/registerButton"

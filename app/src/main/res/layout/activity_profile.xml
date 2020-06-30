@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/profile_nickname"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorAccent" />
 
         <TextView
             android:id="@+id/nameTextView"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/profile_name"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorAccent" />
 
         <TextView
             android:id="@+id/emailTextView"
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/profile_email"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorAccent" />
 
         <TextView
             android:id="@+id/passwordTextView"
@@ -87,39 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/profile_password"
-            android:textColor="@color/colorPrimary" />
-
-        <TextView
-            android:id="@+id/ageTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="+18"
-            android:textColor="@color/colorPrimary" />
-
-        <TextView
-            android:id="@+id/ageText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/profile_age"
-            android:textColor="@color/colorPrimary" />
-
-        <TextView
-            android:id="@+id/genderTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/register_gender_nonbinary"
-            android:textColor="@color/colorPrimary" />
-
-        <TextView
-            android:id="@+id/genderText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/profile_gender"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorAccent" />
 
     </LinearLayout>
     </ScrollView>

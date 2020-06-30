@@ -20,6 +20,13 @@ public class UserRepository {
 
     public void register(User user) {
         users.add(user);
+    }
 
+    private void defaultValues() {
+        User camilaUser = new User("Svartala", "Camila", "camila@gmail.com", "1234");
+        users.add(camilaUser);
+
+        User camiloUser = new User("Machine", "Camilo", "camilo@gmail.com", "4321");
+        users.add(camiloUser);
     }
 }
