@@ -32,15 +32,6 @@ public class CalendarActivity extends AppCompatActivity {
 
         mp = MediaPlayer.create(this,R.raw.pop);
 
-        SharedPreferences pref = getApplicationContext().getSharedPreferences("BuyyaPref", MODE_PRIVATE);
-        SharedPreferences.Editor editor = pref.edit();
-
-        TextView n = (TextView) findViewById(R.id.texto);
-        TextView p = (TextView) findViewById(R.id.texto2);
-
-        n.setText(pref.getString("correo",null));
-        p.setText(pref.getString("pasword",null));
-
 
         Button plus =  (Button) findViewById(R.id.plus);
         ImageButton cosas = (ImageButton) findViewById(R.id.todo);

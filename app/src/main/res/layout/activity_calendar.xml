@@ -9,24 +9,6 @@ android:orientation="vertical"
 android:background="@color/cardview_dark_background"
 tools:context=".CalendarActivity">
 
-
-    <TextView
-        android:layout_marginTop="60dp"
-        android:layout_marginStart="100dp"
-        android:id="@+id/texto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="HOOLA"
-        android:textSize="25dp"></TextView>
-    <TextView
-        android:id="@+id/texto2"
-        android:layout_marginStart="100dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="HOOLA"
-        android:textSize="25dp"></TextView>
-
-
 <ImageButton
     android:layout_width="60dp"
     android:layout_height="60dp"

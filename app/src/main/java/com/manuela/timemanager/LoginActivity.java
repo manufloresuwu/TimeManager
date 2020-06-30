@@ -80,17 +80,6 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 validateLogin();
-
-                String n = emailEditText.getText().toString();
-                String p = passwordEditText.getText().toString();
-
-                SharedPreferences pref = getApplicationContext().getSharedPreferences("BuyyaPref", MODE_PRIVATE);
-                SharedPreferences.Editor editor = pref.edit();
-
-                editor.putString("correo", n);
-                editor.putString("pasword", p);
-                editor.commit();
-                Toast.makeText(LoginActivity.this,"Entraste correctamente uwu",Toast.LENGTH_LONG).show();
             }
         });
     }
