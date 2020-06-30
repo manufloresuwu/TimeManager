@@ -19,9 +19,9 @@
         android:id="@+id/btn"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:onClick="sigueinte2"
         android:text="Notificaciones"
         tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="70dp"
-        android:onClick="sigueinte2"/>
+        tools:layout_editor_absoluteY="70dp" />
 
 </LinearLayout>

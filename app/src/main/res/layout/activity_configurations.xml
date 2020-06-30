@@ -10,32 +10,48 @@
         android:id="@+id/general"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackground"
-        android:text="@string/general"
-        android:onClick="general"/>
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="general"
+        android:text="@string/config_gral"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/bti"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackground"
-        android:text="@string/information"
-        android:onClick="information"/>
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="information"
+        android:text="@string/config_information"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/btc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackground"
-        android:text="@string/perfil"
-        android:onClick="perfil"/>
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="perfil"
+        android:text="@string/config_profile"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/btnew"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackground"
-        android:text="@string/new_user"
-        android:onClick="usuario"/>
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="usuario"
+        android:text="@string/config_newuser"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
 
 </LinearLayout>

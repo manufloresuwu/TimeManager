@@ -6,10 +6,25 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/textViewnickname"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:text="@string/profile_nickname"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/editTextTextnickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="34dp"
-        android:text="Correo Electronico:" />
+        android:text="@string/profile_email"
+        android:textColor="@color/colorPrimary" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -19,12 +34,12 @@
         android:inputType="textEmailAddress" />
 
 
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="44dp"
-        android:text="Contraseña:" />
+        android:text="@string/editinfo_newpass"
+        android:textColor="@color/colorPrimary" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -33,26 +48,28 @@
         android:ems="10"
         android:inputType="textPassword" />
 
-
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:text="Edad:" />
+        android:layout_height="44dp"
+        android:text="@string/editinfo_actualpass"
+        android:textColor="@color/colorPrimary" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editTextTextPasswordActual"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="textPassword" />
+
 
     <Button
         android:id="@+id/button5"
         android:layout_width="157dp"
         android:layout_height="wrap_content"
-        android:text="Guardar" />
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/editinfo_guardar"
+        android:textColor="#FFFFFF" />
 
 
 </LinearLayout>

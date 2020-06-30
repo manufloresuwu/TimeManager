@@ -38,8 +38,6 @@
     <string name="profile_password">Password</string>
     <string name="profile_name">Name</string>
     <string name="profile_nickname">Nickname</string>
-    <string name="profile_age">Age</string>
-    <string name="profile_gender">Gender</string>
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label" translatable="false">First Fragment</string>
@@ -53,12 +51,6 @@
     <!--Things to do-->
     <string name="time">Time</string>
 
-
-    <!--Configuration-->
-    <string name="general">General</string>
-    <string name="information">Information</string>
-    <string name="perfil">Profile</string>
-    <string name="new_user">New User</string>
 
     <!-- Notification -->
     <string name="get_notifications">Get Notifications</string>
@@ -93,5 +85,16 @@
     <string name="register_gender_male">Gender Male</string>
     <string name="register_gender_nonbinary">Gender Nonbinary</string>
     <string name="action_settings" translatable="false">action settings</string>
+
+    <!-- Edit info -->
+    <string name="editinfo_guardar">Save</string>
+    <string name="editinfo_newpass">New Password</string>
+    <string name="editinfo_actualpass">Actual Password</string>
+
+    <!-- Configuration -->
+    <string name="config_information">Information</string>
+    <string name="config_newuser">New User</string>
+    <string name="config_gral">General</string>
+    <string name="config_profile">Profile</string>
 
 </resources>
