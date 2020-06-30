@@ -18,7 +18,7 @@
             android:id="@+id/timer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="75dp"
             android:background="@color/cardview_light_background"
             tools:ignore="PrivateResource" />
 
@@ -27,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textSize="22dp"
             android:inputType="textPersonName"
             android:text="Activity title" />
 
