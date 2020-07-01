@@ -1,0 +1,188 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/ibt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Logro1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="OnClick"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/ibt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Logro2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="OnClick"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/ibt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Logro3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="OnClick"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/ibt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Logro4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="OnClick"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/ibt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Logro5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="OnClick"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/ibt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Logro6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="OnClick"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/ibt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Logro7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="OnClick"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/ibt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Logro8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="OnClick"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/ibt9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Logro9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="OnClick"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/ibt10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Logro10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="OnClick"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/ibt11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Logro11"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="OnClick"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/ibt12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Logro12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="OnClick"></ImageButton>
+
+    <TextView
+        android:layout_width="293dp"
+        android:layout_height="48dp"
+        android:text=" Logros Desbloqueados"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

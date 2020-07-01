@@ -2,10 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.manuela.timemanager">
 
-    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
-    <uses-permission android:name="android.hardware.Camera" android:required="true"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.hardware.Camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +16,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InformationUs"></activity>
+        <activity android:name=".Logro12"></activity>
+        <activity android:name=".Logro11" />
+        <activity android:name=".Logro10" />
+        <activity android:name=".Logro9" />
+        <activity android:name=".Logro8" />
+        <activity android:name=".Logro7" />
+        <activity android:name=".Logro6" />
+        <activity android:name=".Logro5" />
+        <activity android:name=".Logro4" />
+        <activity android:name=".Logro3" />
+        <activity android:name=".Logro2" />
+        <activity android:name=".Logro1" />
+        <activity android:name=".Logros" />
+        <activity android:name=".InformationUs" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -42,19 +57,14 @@
         <activity android:name=".EditarInformacion" />
 
         <provider
-            android:authorities="${applicationId}.provider"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">
-
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths">
-
-            </meta-data>
-
+                android:resource="@xml/provider_paths" />
         </provider>
-
     </application>
 
 </manifest>
