@@ -7,6 +7,10 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+
+import static com.manuela.timemanager.R.id.ibt1;
+import static com.manuela.timemanager.R.id.image;
 
 public class Logros extends AppCompatActivity {
 
@@ -17,12 +21,34 @@ public class Logros extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logros);
 
-        Button b1 = (Button) findViewById(R.id.b1);
+        ImageButton ibt1;
+        ImageButton ibt2;
+        ImageButton ibt3;
+        ImageButton ibt4;
+        ImageButton ibt5;
+        ImageButton ibt6;
+        ImageButton ibt7;
+        ImageButton ibt8;
+        ImageButton ibt9;
+        ImageButton ibt10;
+        ImageButton ibt11;
+        ImageButton ibt12;
+        ibt1 = (ImageButton) findViewById(R.id.ibt1);
+        ibt2 = (ImageButton) findViewById(R.id.ibt2);
+        ibt3 = (ImageButton) findViewById(R.id.ibt3);
+        ibt4 = (ImageButton) findViewById(R.id.ibt4);
+        ibt5 = (ImageButton) findViewById(R.id.ibt5);
+        ibt6 = (ImageButton) findViewById(R.id.ibt6);
+        ibt7 = (ImageButton) findViewById(R.id.ibt7);
+        ibt8 = (ImageButton) findViewById(R.id.ibt8);
+        ibt9 = (ImageButton) findViewById(R.id.ibt9);
+        ibt10 = (ImageButton) findViewById(R.id.ibt10);
+        ibt11 = (ImageButton) findViewById(R.id.ibt11);
+        ibt12 = (ImageButton) findViewById(R.id.ibt12);
         md = MediaPlayer.create(this,R.raw.pop);
 
 
-        ////////////////////////// ASI PARA IR AL LOGRO 1
-        b1.setOnClickListener(new View.OnClickListener() {
+        ibt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 md.start();
@@ -30,7 +56,107 @@ public class Logros extends AppCompatActivity {
                 startActivity(logro1);
             }
         });
-        //////////////////////////
+
+        ibt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                md.start();
+                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                startActivity(logro1);
+            }
+        });
+
+        ibt3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                md.start();
+                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                startActivity(logro1);
+            }
+        });
+
+        ibt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                md.start();
+                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                startActivity(logro1);
+            }
+        });
+
+        ibt5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                md.start();
+                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                startActivity(logro1);
+            }
+        });
+
+        ibt6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                md.start();
+                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                startActivity(logro1);
+            }
+        });
+
+        ibt7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                md.start();
+                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                startActivity(logro1);
+            }
+        });
+
+        ibt8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                md.start();
+                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                startActivity(logro1);
+            }
+        });
+
+        ibt9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                md.start();
+                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                startActivity(logro1);
+            }
+        });
+
+        ibt10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                md.start();
+                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                startActivity(logro1);
+            }
+        });
+
+        ibt11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                md.start();
+                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                startActivity(logro1);
+            }
+        });
+
+        ibt12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                md.start();
+                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                startActivity(logro1);
+            }
+        });
+
+
     }
 
     public void logro2(View View) {
