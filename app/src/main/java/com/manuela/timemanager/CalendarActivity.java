@@ -34,7 +34,7 @@ public class CalendarActivity extends AppCompatActivity {
 
 
         Button plus =  (Button) findViewById(R.id.plus);
-        ImageButton cosas = (ImageButton) findViewById(R.id.todo);
+        Button cosas = (Button) findViewById(R.id.todo);
         ImageButton ok = (ImageButton) findViewById(R.id.ahok);
 
         final Bundle datos = this.getIntent().getExtras();
