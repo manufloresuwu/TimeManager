@@ -98,5 +98,13 @@
     <string name="config_newuser">New User</string>
     <string name="config_gral">General</string>
     <string name="config_profile">Profile</string>
+    <string name="profile_age">Age</string>
+    <string name="profile_gender">Gender</string>
+    <string name="general">General</string>
+    <string name="information">Information</string>
+    <string name="new_user">New User</string>
+    <string name="perfil">Profile</string>
+    <string name="get_notifications">Get Notifications</string>
+    <string name="notifications_prueba">Notifications</string>
 
 </resources>

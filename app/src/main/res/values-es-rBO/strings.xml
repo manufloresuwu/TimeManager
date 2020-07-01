@@ -50,4 +50,15 @@
     <string name="register_gender_female">Género Femenino</string>
     <string name="register_gender_male">Género Masculino</string>
     <string name="register_gender_nonbinary">Género Sin Definir</string>
+    <string name="editinfo_guardar">Guardar</string>
+    <string name="editinfo_newpass">Nueva Contraseña</string>
+    <string name="editinfo_actualpass">Contraseña Actual</string>
+    <string name="config_information">Información</string>
+    <string name="config_newuser">Nuevo Usuario</string>
+    <string name="config_gral">General</string>
+    <string name="config_profile">Perfil</string>
+    <string name="notifications_receive">Recibir Notificaciones</string>
+    <string name="notifications_prove">Probar Notificaciones</string>
+    <string name="profile_takephoto">Tomar foto</string>
+    <string name="profile_select">Seleccionar Imagen</string>
 </resources>

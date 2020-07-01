@@ -50,4 +50,15 @@
     <string name="register_gender_female">женский пол</string>
     <string name="register_gender_male">мужской пол</string>
     <string name="register_gender_nonbinary">пол не определен</string>
+    <string name="editinfo_guardar">спасти</string>
+    <string name="editinfo_newpass">Новый пароль</string>
+    <string name="editinfo_actualpass">Действующий пароль</string>
+    <string name="config_information">Информация</string>
+    <string name="config_newuser">новый пользователь</string>
+    <string name="config_gral">Общее</string>
+    <string name="config_profile">профиль</string>
+    <string name="notifications_receive">Получать уведомления</string>
+    <string name="notifications_prove">тестовые уведомления</string>
+    <string name="profile_takephoto">сфотографировать</string>
+    <string name="profile_select">выберите изображение</string>
 </resources>
