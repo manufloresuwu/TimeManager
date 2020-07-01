@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/img"
         android:layout_centerHorizontal="true"
-        android:text="Compartir"/>
+        android:text="@string/share"/>
 
     <ImageButton
         android:id="@+id/img"

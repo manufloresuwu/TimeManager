@@ -50,4 +50,17 @@
     <string name="register_gender_female">женский пол</string>
     <string name="register_gender_male">мужской пол</string>
     <string name="register_gender_nonbinary">пол не определен</string>
+    <string name="editinfo_guardar">спасти</string>
+    <string name="profile_takephoto">Сфотографировать</string>
+    <string name="profile_select">Выберите профиль</string>
+    <string name="config_gral">Общее</string>
+    <string name="config_newuser">Новый пользователь</string>
+    <string name="config_information">Информация</string>
+    <string name="config_profile">профиль</string>
+    <string name="notifications_receive">получать уведомления</string>
+    <string name="notifications_prove">уведомления</string>
+    <string name="editinfo_actualpass">Действующий пароль</string>
+    <string name="editinfo_newpass">Новый пароль</string>
+    <string name="share">доля</string>
+    <string name="achievement_unlocked">Достижение разблокировано</string>
 </resources>

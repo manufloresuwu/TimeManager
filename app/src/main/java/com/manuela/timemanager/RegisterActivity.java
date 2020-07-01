@@ -93,7 +93,7 @@ public class RegisterActivity extends Activity {
                     k[i]=0;
                     l[i]=0;
                 }
-                Intent intent = new Intent(RegisterActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(RegisterActivity.this, CalendarActivity.class);
                 intent.putExtra("tex", f);
                 intent.putExtra("hora", k);
                 intent.putExtra("minutos",l);

@@ -57,7 +57,7 @@ public class Logros extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 md.start();
-                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                Intent logro1 = new Intent(Logros.this, Logro2.class);
                 startActivity(logro1);
             }
         });
@@ -66,7 +66,7 @@ public class Logros extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 md.start();
-                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                Intent logro1 = new Intent(Logros.this, Logro3.class);
                 startActivity(logro1);
             }
         });
@@ -75,7 +75,7 @@ public class Logros extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 md.start();
-                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                Intent logro1 = new Intent(Logros.this, Logro4.class);
                 startActivity(logro1);
             }
         });
@@ -84,7 +84,7 @@ public class Logros extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 md.start();
-                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                Intent logro1 = new Intent(Logros.this, Logro5.class);
                 startActivity(logro1);
             }
         });
@@ -93,7 +93,7 @@ public class Logros extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 md.start();
-                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                Intent logro1 = new Intent(Logros.this, Logro6.class);
                 startActivity(logro1);
             }
         });
@@ -102,7 +102,7 @@ public class Logros extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 md.start();
-                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                Intent logro1 = new Intent(Logros.this, Logro7.class);
                 startActivity(logro1);
             }
         });
@@ -111,7 +111,7 @@ public class Logros extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 md.start();
-                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                Intent logro1 = new Intent(Logros.this, Logro8.class);
                 startActivity(logro1);
             }
         });
@@ -120,7 +120,7 @@ public class Logros extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 md.start();
-                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                Intent logro1 = new Intent(Logros.this, Logro9.class);
                 startActivity(logro1);
             }
         });
@@ -129,7 +129,7 @@ public class Logros extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 md.start();
-                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                Intent logro1 = new Intent(Logros.this, Logro10.class);
                 startActivity(logro1);
             }
         });
@@ -138,7 +138,7 @@ public class Logros extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 md.start();
-                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                Intent logro1 = new Intent(Logros.this, Logro11.class);
                 startActivity(logro1);
             }
         });
@@ -147,7 +147,7 @@ public class Logros extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 md.start();
-                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                Intent logro1 = new Intent(Logros.this, Logro12.class);
                 startActivity(logro1);
             }
         });
