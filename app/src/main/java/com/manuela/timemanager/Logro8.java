@@ -37,7 +37,7 @@ public class Logro8 extends AppCompatActivity {
                 Bitmap bitmap=((BitmapDrawable)drawable).getBitmap();
 
                 try {
-                    File file = new File(getApplicationContext().getExternalCacheDir(), File.separator +"l1.jpg");
+                    File file = new File(getApplicationContext().getExternalCacheDir(), File.separator +"l8.jpg");
                     FileOutputStream fOut = new FileOutputStream(file);
                     bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fOut);
                     fOut.flush();
