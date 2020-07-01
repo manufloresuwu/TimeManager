@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_light_background"
+    android:background="@drawable/fondo_calendar"
     android:orientation="vertical"
     tools:context=".CalendarActivity">
 
@@ -13,7 +13,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="350dp"
-        android:background="@drawable/ahok">
+        android:background="@drawable/ic_menu_abierto">
 
 
     </ImageButton>
@@ -27,7 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/cardview_light_background"
-            android:dateTextAppearance="@style/TextAppearance.AppCompat.Medium"></CalendarView>
+            android:dateTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:selectedWeekBackgroundColor="@color/colorPrimary"></CalendarView>
     </LinearLayout>
 
     <LinearLayout
@@ -41,27 +42,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
             android:layout_marginTop="30dp"
+            android:backgroundTint="@color/colorPrimary"
             android:text="+"
+            android:textColor="#FFFFFF"
             android:textSize="50dp"></Button>
 
 
-        <ImageButton
+        <Button
             android:id="@+id/todo"
-            android:layout_width="160dp"
-            android:layout_height="130dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="16dp"
             android:layout_marginStart="30dp"
-            android:background="@drawable/agenda"></ImageButton>
+            android:background="@drawable/ic_contenido"
+            android:backgroundTint="@color/colorPrimary"
+            android:tint="@color/colorAccent"></Button>
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="160dp"
-        android:text="@string/date"
-        android:textColor="#FFFF"
-        android:textSize="30dp">
-
-    </TextView>
 </LinearLayout>

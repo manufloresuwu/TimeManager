@@ -6,13 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="@drawable/fondo_register"
     tools:context=".MainActivity">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:background="@color/cardview_light_background">
 
             <TextView
                 android:id="@+id/nicknameTextView"
@@ -89,14 +91,15 @@
                 android:ems="10"
                 android:inputType="textPassword" />
 
-
-            <Button
-                android:id="@+id/registerButton"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:backgroundTint="@color/colorPrimaryDark"
-                android:text="@string/button_register" />
         </LinearLayout>
+
+    <Button
+        android:id="@+id/registerButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/button_register" />
 </LinearLayout>

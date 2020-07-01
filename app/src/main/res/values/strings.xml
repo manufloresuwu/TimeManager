@@ -38,6 +38,8 @@
     <string name="profile_password">Password</string>
     <string name="profile_name">Name</string>
     <string name="profile_nickname">Nickname</string>
+    <string name="profile_takephoto">Take a Photo</string>
+    <string name="profile_select">Select Image</string>
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label" translatable="false">First Fragment</string>
@@ -53,8 +55,8 @@
 
 
     <!-- Notification -->
-    <string name="get_notifications">Get Notifications</string>
-    <string name="notifications_prueba">Notifications</string>
+    <string name="notifications_receive">Receive Notifications</string>
+    <string name="notifications_prove">Prove Notifications</string>
 
     <!-- Edit Information -->
     <string name="save">Save</string>
