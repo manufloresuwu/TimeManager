@@ -17,6 +17,8 @@ public class Logros extends AppCompatActivity {
         setContentView(R.layout.activity_logros);
     }
 
+
+
     public void logro1(View View) {
         Intent logro1 = new Intent(this, Logro1.class);
         startActivity(logro1);
