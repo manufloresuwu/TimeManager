@@ -8,15 +8,25 @@
     android:orientation="vertical"
     tools:context=".CalendarActivity">
 
-    <ImageButton
-        android:id="@+id/ahok"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="350dp"
-        android:background="@drawable/ic_menu_abierto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
 
+        <Button
+            android:id="@+id/logros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logros"></Button>
 
-    </ImageButton>
+        <ImageButton
+            android:id="@+id/ahok"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="260dp"
+            android:background="@drawable/ic_menu_abierto">
+        </ImageButton>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

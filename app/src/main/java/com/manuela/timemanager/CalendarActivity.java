@@ -32,7 +32,7 @@ public class CalendarActivity extends AppCompatActivity {
 
         mp = MediaPlayer.create(this,R.raw.pop);
 
-
+        Button logros = (Button) findViewById(R.id.logros);
         Button plus =  (Button) findViewById(R.id.plus);
         Button cosas = (Button) findViewById(R.id.todo);
         ImageButton ok = (ImageButton) findViewById(R.id.ahok);
@@ -72,6 +72,14 @@ public class CalendarActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CalendarActivity.this, Configurations.class);
+                startActivity(intent);
+            }
+        });
+
+        logros.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (CalendarActivity.this, Logros.class);
                 startActivity(intent);
             }
         });
