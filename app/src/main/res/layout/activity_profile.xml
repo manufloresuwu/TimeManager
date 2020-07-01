@@ -5,34 +5,91 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
+
+
     tools:context=".MainActivity">
 
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/gatitos"
+        >
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        >
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/ivFoto"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnTomarFoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTomarFoto"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:elegantTextHeight="true"
+            android:padding="12dp"
+            android:text="Tomar foto"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/colorAccent"
+            app:icon="@drawable/ic_camara_filmografica"
+            tools:ignore="MissingPrefix" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSeleccionarImagen"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:elegantTextHeight="true"
+            android:padding="8dp"
+            android:text="Seleccionar Imagen"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/colorAccent"
+            app:icon="@drawable/ic_telefono_inteligente"
+            tools:ignore="MissingPrefix" />
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            app:srcCompat="@drawable/reloj" />
+            android:background="@color/cardview_light_background">
 
         <TextView
             android:id="@+id/nicknameTextView"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Svartalla"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textColor="@color/colorPrimary"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_margin="16dp"
+            />
 
         <TextView
             android:id="@+id/nicknameText"
@@ -40,7 +97,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/profile_nickname"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@color/colorAccent"
+            android:layout_margin="16dp"/>
 
         <TextView
             android:id="@+id/nameTextView"
@@ -49,7 +107,8 @@
             android:layout_marginTop="16dp"
             android:text="Manuela Flores"
             android:textColor="@color/colorPrimary"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_margin="16dp"/>
 
         <TextView
             android:id="@+id/nameText"
@@ -57,7 +116,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/profile_name"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@color/colorAccent"
+            android:layout_margin="16dp"/>
 
         <TextView
             android:id="@+id/emailTextView"
@@ -66,7 +126,8 @@
             android:layout_marginTop="16dp"
             android:text="svartala@gmail.com"
             android:textColor="@color/colorPrimary"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_margin="16dp"/>
 
         <TextView
             android:id="@+id/emailText"
@@ -74,7 +135,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/profile_email"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@color/colorAccent"
+            android:layout_margin="16dp"/>
 
         <TextView
             android:id="@+id/passwordTextView"
@@ -83,7 +145,8 @@
             android:layout_marginTop="16dp"
             android:text="***************"
             android:textColor="@color/colorPrimary"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_margin="16dp"/>
 
         <TextView
             android:id="@+id/passwordText"
@@ -91,8 +154,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/profile_password"
-            android:textColor="@color/colorAccent" />
-
+            android:textColor="@color/colorAccent"
+            android:layout_margin="16dp"/>
+        </LinearLayout>
     </LinearLayout>
     </ScrollView>
 </LinearLayout>
