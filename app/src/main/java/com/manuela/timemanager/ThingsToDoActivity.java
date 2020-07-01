@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -36,14 +38,9 @@ public class ThingsToDoActivity extends AppCompatActivity {
         rows = new ArrayList<Row>(10);
         Row row = null;
         for (int i = 0; i < tasks+1; i++) {
-            if(txt!=null){
-                row = new Row();
-                row.setTitle("Title: " + txt[i] );
-                row.setSubtitle("at: " + hora[i] + ":" + minutos[i]);
-                rows.add(row);
-            }
+            row=new Row();
+            Buscar(i+1,row);
         }
-//        rows.get(3).setChecked(true);
 
         listView.setAdapter(new CustomArrayAdapter(this, rows));
 
@@ -57,4 +54,24 @@ public class ThingsToDoActivity extends AppCompatActivity {
         });
     }
 
+    public void Buscar(int codigo, Row row){
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
+        SQLiteDatabase BaseDeDatabase = admin.getWritableDatabase();
+
+        if(codigo!=0){
+            Cursor fila = BaseDeDatabase.rawQuery
+                    ("select nombre from actividades where codigo =" + codigo, null);
+            if(fila.getCount() >= 1){
+                while(fila.moveToNext()){
+                    row.setTitle("Title: " +fila.getString(0));
+                    //row.setSubtitle("at: " +fila.getString(1));
+                    rows.add(row);
+                    BaseDeDatabase.close();
+                }
+                Toast.makeText(this,"HOLA KK", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            Toast.makeText(this, "ID = ERROR", Toast.LENGTH_SHORT).show();
+        }
+    }
 }

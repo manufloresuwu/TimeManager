@@ -1,6 +1,8 @@
 package com.manuela.timemanager;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -17,9 +19,11 @@ import java.util.Calendar;
 
 public class AddTaskActivity extends AppCompatActivity {
 
+
     TimePicker timer;
     int hora, minutos, t = 0;
     int max=12;
+    int codigo = 0;
     int horas[]=new int[max];
     int minutes[]=new int[max];
 
@@ -57,6 +61,8 @@ public class AddTaskActivity extends AppCompatActivity {
                         "Añadido a la hora: "+hora+":"+minutos, Toast.LENGTH_SHORT);
 
                 toast2.setGravity(Gravity.CENTER| Gravity.LEFT,0,0);
+                codigo++;
+                Registrar(v);
 
                 toast2.show();
                 textos[t]=txt.getText().toString();
@@ -85,6 +91,30 @@ public class AddTaskActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 
+
+    public void Registrar(View view){
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
+        SQLiteDatabase BaseDeDatos = admin.getWritableDatabase();
+
+        String nombre = txt.getText().toString();
+        String tiempo = hora+":"+minutos;
+
+        if(!nombre.isEmpty() && !tiempo.isEmpty()){
+            ContentValues registro = new ContentValues();
+
+            registro.put("codigo", codigo);
+            registro.put("nombre", nombre);
+            //registro.put("tiempo", tiempo);
+
+            BaseDeDatos.insert("actividades", null, registro);
+            BaseDeDatos.close();
+
+            Toast.makeText(this,"Registro exitoso", Toast.LENGTH_SHORT).show();
+        } else{
+            Toast.makeText(this, "Debes llenar todos los campos", Toast.LENGTH_SHORT).show();
+        }
+    }
 }
