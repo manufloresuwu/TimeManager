@@ -68,7 +68,6 @@ public class ThingsToDoActivity extends AppCompatActivity {
                     rows.add(row);
                     BaseDeDatabase.close();
                 }
-                Toast.makeText(this,"HOLA KK", Toast.LENGTH_SHORT).show();
             }
         } else {
             Toast.makeText(this, "ID = ERROR", Toast.LENGTH_SHORT).show();
