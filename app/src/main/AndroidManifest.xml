@@ -33,6 +33,19 @@
         <activity android:name=".ThingsToDoActivity" />
         <activity android:name=".Configurations" />
         <activity android:name=".General" />
+        <activity android:name=".Logros" />
+        <activity android:name=".Logro1" />
+        <activity android:name=".Logro2" />
+        <activity android:name=".Logro3" />
+        <activity android:name=".Logro4" />
+        <activity android:name=".Logro5" />
+        <activity android:name=".Logro6" />
+        <activity android:name=".Logro7" />
+        <activity android:name=".Logro8" />
+        <activity android:name=".Logro9" />
+        <activity android:name=".Logro10" />
+        <activity android:name=".Logro11" />
+        <activity android:name=".Logro12" />
         <activity android:name=".Notificaciones" />
         <activity android:name=".EditarInformacion" />
     </application>

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class Logros extends AppCompatActivity {
 
@@ -15,14 +16,21 @@ public class Logros extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logros);
-    }
+
+        Button b1 = (Button) findViewById(R.id.b1);
+        md = MediaPlayer.create(this,R.raw.pop);
 
 
-
-    public void logro1(View View) {
-        Intent logro1 = new Intent(this, Logro1.class);
-        startActivity(logro1);
-        MediaPlayer.create(this, R.raw.pop);
+        ////////////////////////// ASI PARA IR AL LOGRO 1
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                md.start();
+                Intent logro1 = new Intent(Logros.this, Logro1.class);
+                startActivity(logro1);
+            }
+        });
+        //////////////////////////
     }
 
     public void logro2(View View) {
