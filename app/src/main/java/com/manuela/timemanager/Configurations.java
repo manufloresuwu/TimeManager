@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.android.material.button.MaterialButton;
+
 public class Configurations extends AppCompatActivity {
 
     @Override
@@ -13,21 +15,40 @@ public class Configurations extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_configurations);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
-    public void general(View View) {
-        Intent general = new Intent(this, General.class);
-        startActivity(general);
-    }
-    public void information(View View) {
-        Intent information = new Intent(this, InformationUs.class);
-        startActivity(information);
-    }
-    public void perfil(View View) {
-        Intent perfil = new Intent(this, ProfileActivity.class);
-        startActivity(perfil);
-    }
-    public void usuario(View View) {
-        Intent usuario = new Intent(this, RegisterActivity.class);
-        startActivity(usuario);
+        MaterialButton a = (MaterialButton) findViewById(R.id.bti);
+        MaterialButton b = (MaterialButton) findViewById(R.id.btc);
+        MaterialButton c = (MaterialButton) findViewById(R.id.btnew);
+        MaterialButton d = (MaterialButton) findViewById(R.id.general);
+
+        d.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent general = new Intent(Configurations.this, General.class);
+                startActivity(general);
+            }
+        });
+        a.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent information = new Intent(Configurations.this, InformationUs.class);
+                startActivity(information);
+            }
+        });
+
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent perfil = new Intent(Configurations.this, ProfileActivity.class);
+                startActivity(perfil);
+            }
+        });
+
+        c.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent usuario = new Intent(Configurations.this, RegisterActivity.class);
+                startActivity(usuario);
+            }
+        });
     }
 }
